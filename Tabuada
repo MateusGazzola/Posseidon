@@ -1,6 +1,6 @@
 
 let numero = prompt("Por Favor Escolha Um numero")
 let i = 1
-while (i < 10){
+while (i < 11){
     console.log(numero * i); i++;
 }
