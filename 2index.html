@@ -1,0 +1,22 @@
+
+<html>
+<head>
+  <title>Exemplo</title>
+  <script>
+    function processar() {
+    const valor = document.getElementById("meuInput").value;
+    const valor2 = document.getElementById("meuInput2").value;
+    const numero1 = parseFloat(valor);
+    const numero2 = parseFloat(valor2);
+    const resultado = numero1 + numero2;
+    document.getElementById("resultado").innerText = "A soma é igual a " + resultado + "!";
+      }
+  </script>
+</head>
+<body>
+  <input id="meuInput" type="text" placeholder="Digite um número">
+  <input id="meuInput2" type="text" placeholder="Digite outro número">
+  <button id="meuBotao" onclick="processar()">Clique Aqui</button>
+  <div id="resultado">O resultado aparecerá aqui</div>
+</body>
+</html>
