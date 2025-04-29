@@ -1,39 +1,22 @@
-<!DOCTYPE html>
-<html 
+
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Lista de Tarefas</title>
-
+  <title>soma</title>
   <script>
-    function adicionarTarefa() {
-      const input = document.getElementById("entradaTexto");
-      const texto = input.value.trim();
-
-      if (texto === "") {
-        alert("Digite alguma coisa para adicionar à lista.");
-        return;
-      }
-
-      const lista = document.getElementById("lista");
-      const item = document.createElement("li");
-      item.textContent = texto;
-
-      lista.appendChild(item);
-      input.value = ""; // Limpa o campo após adicionar
+    function processar() {
+    const valor = document.getElementById("meuInput").value;
+    const valor2 = document.getElementById("meuInput2").value;
+    const numero1 = parseFloat(valor);
+    const numero2 = parseFloat(valor2);
+    const resultado = numero1 + numero2;
+    document.getElementById("resultado").innerText = "A soma é igual a " + resultado + "!";
     }
   </script>
 </head>
 <body>
-
-  <h1>Minha Lista</h1>
-
-  <input id="entradaTexto" type="text" placeholder="Escreva sua tarefa aqui">
-  <button onclick="adicionarTarefa()">Adicionar</button>
-
-  <ul id="lista">
-    <!-- Tarefas aparecerão aqui -->
-  </ul>
-
+  <input id="meuInput" type="text" placeholder="Digite um número">
+  <input id="meuInput2" type="text" placeholder="Digite outro número">
+  <button id="meuBotao" onclick="processar()">Clique Aqui</button>
+  <div id="resultado">O resultado aparecerá aqui</div>
 </body>
-</html>
-
+</html>   
