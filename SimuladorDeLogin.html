@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Login</title>
+<script>
+     function logarumUsuario(){
+const usuariocorreto = "Mateus"
+const senhacorreta = "2025"
+const usuario = document.getElementById("usuario").value;
+const senha = document.getElementById("senha").value;
+if (usuariocorreto === usuario && senhacorreta === senha) {
+document.getElementById("resultado").innerText = "Login Bem Sucedido !!"
+} else {
+    document.getElementById("resultado").innerText = "Usuário ou Senha Incorreto !!"
+}
+     }
+</script>
+</head>
+<body>
+    <h1>Loguin De Usuário</h1>
+
+    <input id = "usuario" type="text">
+    <input id = "senha" type="text">
+    <button id = "meuBotao" onclick="logarumUsuario()">Logar</button>
+    <div id="resultado"></div>
+</body>
+</html>
+
+<!-- como fazer usuario e senha fixo em um codigo -->
+<!-- consegue corrigir meu código -->
