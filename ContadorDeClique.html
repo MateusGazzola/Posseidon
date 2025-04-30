@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador De Cliques Com Reset</title>
+    <script>
+        let contador = 0;
+function contadorClique() {
+contador++;
+document.getElementById("resultado").innerText = "CLIQUES:" + contador;
+}
+function resetClique() {
+contador = 0;
+document.getElementById("resultado").innerText = "CLIQUES:" + contador;
+}
+    </script>
+
+</head>
+
+<body>
+    <button id="meuBotao" onclick="contadorClique()">CLIQUE</button>
+    <button id="MeusegundoBotao" onclick="resetClique()">APAGUE seus cliques</button>
+    <div id="resultado">O Resultado Aparecerá Aqui</div>
+</body>
+</html>
+
+
+<!-- como funciona um contador de clique -->
+<!-- consegue corrigir meu código -->
